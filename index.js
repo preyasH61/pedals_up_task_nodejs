@@ -11,7 +11,7 @@ server.get("/", (req, res) => {
 });
 
 server.get("/games", (req, res) => {
-    res.send("api games path called")
+    res.send("api games called")
 });
 
 server.listen(PORT,()=>{
