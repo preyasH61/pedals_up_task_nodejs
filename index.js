@@ -3,7 +3,7 @@ require('dotenv').config();
 
 const server = express();
 
-const PORT = process.env.PORT
+const PORT = process.env.PORT | 4000;
 server.use(express.json());
 
 server.get("/", (req, res) => {
@@ -11,7 +11,7 @@ server.get("/", (req, res) => {
 });
 
 server.get("/games", (req, res) => {
-    res.send("api games called")
+    res.send("api games path called")
 });
 
 server.listen(PORT,()=>{
