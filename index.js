@@ -7,7 +7,7 @@ const PORT = process.env.PORT
 server.use(express.json());
 
 server.get("/", (req, res) => {
-    res.send("api root path")
+    res.send("api root path called")
 });
 
 server.get("/games", (req, res) => {
